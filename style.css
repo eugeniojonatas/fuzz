@@ -1,21 +1,13 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 html, body {
     height: 100%;
 }
-
 body {
-    font-family: Arial, sans-serif;
     background: #f3f3f3;
-    color: #111111;
-    margin: 0;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
+}
+main {
+    flex: 1 0 auto;
 }
 
 .cabecalho {
@@ -32,12 +24,6 @@ body {
     box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.08), 0 10px 25px rgba(0, 0, 0, 0.35);
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-
 .logo img {
     display: block;
     width: 140px;
@@ -49,126 +35,14 @@ body {
     display: flex;
     list-style: none;
     gap: 24px;
+    margin-bottom: 0;
+    padding-left: 0;
 }
 
 .menu a {
     color: #ffffff;
     text-decoration: none;
     font-weight: 600;
-}
-
-.conteudo-principal {
-    width: calc(100% - 40px);
-    max-width: 1200px;
-    margin: 0 auto 40px;
-    flex: 1 0 auto;
-}
-
-.hero {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    width: 100%;
-    min-height: 350px;
-    background: #000000;
-    border-radius: 20px;
-    padding: 40px;
-    margin-bottom: 30px;
-}
-
-.hero-texto {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-}
-
-.hero-texto p {
-    margin: 0;
-    color: #ffffff;
-    font-size: 28px;
-    line-height: 1.4;
-}
-
-.botao-hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #ffffff;
-    color: #000000;
-    border: none;
-    padding: 14px 28px;
-    font-size: 16px;
-    font-weight: 700;
-    border-radius: 8px;
-    cursor: pointer;
-}
-
-.bloco-texto {
-    background: #e7e7e7;
-    border-radius: 20px;
-    padding: 30px 40px;
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-.bloco-texto h2 {
-    margin: 0 0 15px;
-    font-size: 28px;
-}
-
-.bloco-texto p {
-    margin: 0;
-    font-size: 16px;
-    line-height: 1.7;
-}
-
-.sobre-page {
-    margin-top: 20px;
-}
-
-.sobre-intro {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 30px;
-    background: #111111;
-    color: #ffffff;
-    border-radius: 24px;
-    padding: 40px;
-    margin-bottom: 30px;
-}
-
-.sobre-texto {
-    flex: 1;
-}
-
-.titulo-texto {
-    margin: 0 0 10px;
-    font-size: 12px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #d3d3d3;
-}
-
-.sobre-texto h1 {
-    margin: 0 0 16px;
-    font-size: 42px;
-    line-height: 1.1;
-}
-
-.sobre-texto p {
-    margin: 0;
-    font-size: 18px;
-    line-height: 1.7;
-    color: #f0f0f0;
-}
-
-.sobre-visual {
-    flex: 0 0 360px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .bloco-visual {
@@ -180,84 +54,3 @@ body {
     border: 6px solid #000000;
     box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.08);
 }
-
-.contato-page {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    min-height: 0;
-    padding: 30px 0 10px;
-    margin-top: 30px;
-}
-
-.contato-box {
-    width: 100%;
-    max-width: 700px;
-    background: #ffffff;
-    border-radius: 20px;
-    padding: 40px;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08);
-}
-
-.contato-box h1 {
-    margin: 0 0 25px;
-    font-size: 32px;
-    color: #111111;
-}
-
-.form-contato {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-}
-
-.form-contato label {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    font-size: 16px;
-    color: #111111;
-    font-weight: 600;
-}
-
-.form-contato input,
-.form-contato textarea {
-    width: 100%;
-    padding: 12px 14px;
-    border: 1px solid #d9d9d9;
-    border-radius: 10px;
-    font-size: 16px;
-    font-family: Arial, sans-serif;
-}
-
-.form-contato textarea {
-    resize: vertical;
-    min-height: 120px;
-}
-
-.botao-enviar {
-    align-self: flex-start;
-    padding: 12px 24px;
-    background: #000000;
-    color: #ffffff;
-    border: none;
-    border-radius: 10px;
-    font-size: 16px;
-    font-weight: 700;
-    cursor: pointer;
-}
-
-.rodape {
-    width: 100%;
-    background: #111111;
-    color: #ffffff;
-    text-align: center;
-    padding: 20px;
-    margin-top: auto;
-}
-
-.rodape p {
-    margin: 0;
-    font-size: 14px;
-}
-
